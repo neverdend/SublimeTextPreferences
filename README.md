@@ -1,8 +1,6 @@
 # SublimeTextPreferences
-OS X:
+#### After git clone, rename the newly created directory to `User` and move it to the following path.
 
-`~/Library/Application Support/Sublime Text 3/Packages/User`
+OS X: `~/Library/Application Support/Sublime Text 3/Packages/`
 
-Windows:
-
-`~/AppData/Roaming/Sublime Text 3/Packages/User`
+Windows: `~/AppData/Roaming/Sublime Text 3/Packages/`
