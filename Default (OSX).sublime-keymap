@@ -1,0 +1,37 @@
+[
+    // 跳转
+    { "keys": ["super+down"], "command": "goto_definition" },
+    // 当写的是python脚本时, go to definition功能使用Anaconda插件提供的. 
+    // 必须加在{ "keys": ["super+down"], "command": "goto_definition" }后面, 
+    // 为了把所有语言的go to definition快捷键覆盖掉.
+    { "keys": ["super+down"], "command": "anaconda_goto",
+        "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.python" },
+        ]
+    },
+    { "keys": ["super+left"], "command": "jump_back" },
+    { "keys": ["super+right"], "command": "jump_forward" },
+    // 文件
+    { "keys": ["super+t"], "command": "new_file" }, // 相当于New Tab
+    { "keys": ["super+n"], "command": "new_file" },
+    // 双栏显示
+    { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
+    { "keys": ["alt+shift+1"], "command": "move_to_group", "args": { "group": 0 } },
+    { "keys": ["alt+shift+2"], "command": "move_to_group", "args": { "group": 1 } },
+    // 查看文件
+    { "keys": ["alt+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
+    { "keys": ["alt+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
+    // unbind ctrl+space, 该快捷键留给切换输入法使用
+    { "keys": ["ctrl+space"], "command": "nope"},
+    // 使用enter能够选中auto-complete popup中的选项
+    { "keys": ["enter"], "command": "commit_completion", "context":
+        [
+            { "key": "auto_complete_visible" }
+        ]
+    },
+    // 设置SublimeCodeIntel auto-complete快捷键. ctrl+shift+space在mac上会由于输入法的快捷键而无法使用.
+    { "keys": ["ctrl+shift+space"], "command": "auto_complete" },
+    { "keys": ["alt+/"], "command": "auto_complete" }
+]

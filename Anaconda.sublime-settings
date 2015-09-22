@@ -1,0 +1,9 @@
+{
+    // 启用这三个选项后只显示anaconda auto-complete的结果, 不显示sublime自带的auto-complete的结果.
+    // 注意: 只有anaconda auto-complete有可以补全的内容时这三个选项才会起效. 
+    // 如果anaconda auto-complete没有可以补全的内容而sublime自带的auto-complete有可以补全的内容
+    // (比如监视words in the buffer得到的补全内容), 那么还是会显示sublime自带的auto-complete的结果.
+    "suppress_word_completions": true,
+    "suppress_explicit_completions": true,
+    "hide_snippets_on_completion": true
+}

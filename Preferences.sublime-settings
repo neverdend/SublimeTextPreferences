@@ -1,0 +1,21 @@
+{
+	// 不允许tab滚动
+	"enable_tab_scrolling": false,
+	// 默认编码utf-8
+	"default_encoding": "UTF-8",
+	// translate tab to 4 spaces
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	// 使用tab能够选中auto-complete popup中的选项
+	"auto_complete_commit_on_tab": true,
+	// 未显示auto-complete popup时按tab不会直接插入best matching completion. 
+	// 注意: 未显示auto-complete popup且auto-complete popup中只有唯一候选时, 
+	// 那么手动执行auto-complete不会显示auto-complete popup, 而是会直接插入唯一的候选.
+	"tab_completion": false,
+	// 键入.的时候触发auto-complete
+	"auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}],
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}
