@@ -6,4 +6,5 @@
     "suppress_word_completions": true,
     "suppress_explicit_completions": true,
     "hide_snippets_on_completion": true
+    // "pep8": false
 }
