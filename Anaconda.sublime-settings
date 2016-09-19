@@ -5,6 +5,6 @@
     // (比如监视words in the buffer得到的补全内容), 那么还是会显示sublime自带的auto-complete的结果.
     "suppress_word_completions": true,
     "suppress_explicit_completions": true,
-    "hide_snippets_on_completion": true
-    // "pep8": false
+    "hide_snippets_on_completion": true,
+    "pep8": false
 }
